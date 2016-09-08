@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div class="container">
+<h1>Weather Report</h1>
+ <div ng-app = "myapp" ng-controller="weathercntrl">
+
+  <div ng-controller="weathercntrl">
+    <form role = "form">
+    <div class="form-group">
+    <div class = "col-xs-4">
+    <label for="ex4"> Input ZipCode to check the weather!</label>
+      <input class = "form-control" id = "ex4" type="text" maxlength = "5" size = "10" ng-model="aaa" placeholder="zipCode: e.g. 07032"/><br/>
+      <button class="btn btn-heading" ng-click="clickcheck()">Check Weather</button>
+     </div>
+    </div></form>
+    <br/>
+    <div><strong>Country: </strong>{{forecast.sys.country}}</div>
+    <div><strong>City: </strong>{{forecast.name}}</div>
+    <div><strong>Weather description: </strong>{{forecast.weather[0].description}}</div>
+    <div><strong>Temperature: </strong>
+    <span ng-if = "forecast.main.temp != null">{{forecast.main.temp * 9/5 -459.67 | number:0}} °F 
+    ( {{forecast.main.temp_min * 9/5 -459.67 | number:0}} °F / 
+    {{forecast.main.temp_max * 9/5 -459.67 | number:0}} °F )</span></div>  
+    <div><strong>Humidity: </strong>{{forecast.main.humidity}}</div>
+
+    <br/>
+  </div>
+  
+  </div>
+</body>
+</html>

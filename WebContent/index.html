@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+ --><link href="lib/bootstrap.min.css" rel="stylesheet">
+<link href="lib/angular-bootstrap-calendar.min.css" rel="stylesheet">	
+<script src="lib/jquery.min.js"></script>
+<script src="lib/bootstrap.min.js"></script>
+<script src="lib/moment.min.js"></script>
+<script src="lib/interact.min.js"></script>
+<script src="lib/angular.min.js"></script>
+<script src="lib/angular-animate.js"></script>	
+<script src="lib/angular-route.js"></script>
+<script src="lib/ui-bootstrap-tpls.min.js"></script>
+<script src="lib/angular-bootstrap-calendar-tpls.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/helpers.js"></script>
+<script src="js/social.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<link rel="stylesheet" href="css/stylesheet.css">
+
+</head>
+<body ng-controller="homecntrl">
+	<nav class="navbar navbar-inverse" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#/home">Shuangshuang Ma</a>
+			</div>
+
+			<ul class="nav navbar-nav">
+				<li><a href="#/home">Home</a></li>
+				<li><a href="#/profile">Profile</a></li>
+				<li class="dropdown"><a class="dropdown-toggle"
+					data-toggle="dropdown">Project<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#/project/Project1">Carousel</a></li>
+						<li><a href="#/project/calendar">Calendar</a></li>			
+						<li><a href="#/project/weather">Weather</a></li>
+						<li><a href="game.html">Games</a></li>
+						<li><a href="chart.html">Charts</a></li>
+					</ul></li>
+			</ul>
+			<form class="form-inline pull-xs-right">
+				<input class="form-control" type="text" placeholder="Search">
+				<button class="btn btn-success-outline" type="submit">Search</button>
+			</form>
+		</div>
+	</nav>
+
+	<div ng-view>Result goes there ...</div>
+</body>
+</html>

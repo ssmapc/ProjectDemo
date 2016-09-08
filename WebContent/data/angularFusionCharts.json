@@ -1,0 +1,29 @@
+{
+  "chart": {
+    "xAxisName": "Users",
+    "yAxisName": "Marks",
+    "bgcolor": "#FF0000",
+    "caption": "Marlabs Toppers",
+    "subCaption": "This is to find out toppers in marlabs",
+    "numberPrefix": "Total"
+  },
+  "data": [
+    {
+    "label": "aaa",
+    "value": "220"
+  }, {
+    "label": "bbb",
+    "value": "260"
+  }, {
+    "label": "ccc",
+    "value": "290"
+  }, {
+    "label": "ddd",
+    "value": "260"
+  }, {
+    "label": "eee",
+    "value": "290"
+  }
+  ]
+
+}
